@@ -4,3 +4,9 @@ env.sh
 terraform.tfstate
 terraform.tfstate.backup
 *.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+crash.log
+.claude/

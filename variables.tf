@@ -45,3 +45,15 @@ variable "konnect_control_plane_name" {
   type        = string
   default     = "default"
 }
+
+variable "enable_private_link" {
+  description = "Enable AWS PrivateLink for secure private connectivity between ECS Data Plane and Konnect Control Plane"
+  type        = bool
+  default     = false
+}
+
+variable "konnect_private_link_service_name" {
+  description = "AWS PrivateLink service name for your Konnect geo and AWS region. Required when enable_private_link = true. See: https://developer.konghq.com/gateway/aws-private-link/"
+  type        = string
+  default     = ""
+}
